@@ -1,7 +1,18 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Comfortaa', cursive;
     font-size: 25px;
     line-height: 1.6;
+}
+
+section {
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 .container {
@@ -9,8 +20,28 @@ body {
     margin: 0 auto;
 }
 
+.hero-overlay {
+    z-index: 10;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
 .font-weight-bold {
     font-weight: 700;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
 }
 
 .ml-sm {
@@ -69,6 +100,10 @@ body {
     justify-content: space-between;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -78,8 +113,97 @@ body {
 }
 
 #hero {
-    background-color: #ffaf17;
+    background: #ffaf17 url("/img/hero.png") no-repeat center center;
     height: 100vh;
+}
+
+#workshops-hero {
+    background: #ffaf17 url("/img/workshops_hero.png") no-repeat center center;
+    min-height: 549px;
+}
+
+.program h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.program {
+    font-size: 25px;
+}
+
+.program p {
+    margin-bottom: 45px;
+}
+
+#workshops-programmes {
+    margin-bottom: 150px;
+}
+
+#workshops-programmes .program {
+    margin-right: 100px;
+    max-width: 320px;
+}
+
+#workshops-programmes .program:last-of-type {
+    margin-right: 0;
+}
+
+#workshops-icon {
+    display: block;
+    min-width: 390px;
+    min-height: 385px;
+}
+
+#workshops-description {
+    position: relative;
+    max-width: 1020px;
+    background-color: #e5e5e5;
+    padding-top: 73px;
+    padding-bottom: 73px;
+    margin-bottom: 70px;
+}
+
+#workshops-img-1 {
+    position: absolute;
+    top: -70px;
+    left: -90px;
+    width: 539px;
+    height: 540px;
+}
+
+#workshops-text-1 {
+    margin-left: 570px;
+    padding-right: 30px;
+    margin-bottom: 220px;
+}
+
+#workshops-img-2 {
+    position: absolute;
+    bottom: -70px;
+    right: -90px;
+    width: 539px;
+    height: 543px;
+}
+
+#workshops-text-2 {
+    padding-left: 70px;
+    max-width: 480px;
+}
+
+.floating-quote-container {
+    position: absolute;
+    top: 350px;
+    right: 150px;
+    max-width: 569px;
+}
+
+.floating-quote {
+    font-family: serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 80px;
+    word-wrap: break-word;
+    line-height: 1.1;
 }
 
 .navbar-container {
@@ -91,6 +215,11 @@ body {
     background-color: rgba(69, 153, 147, 0.5);
     padding: 18px 119px;
     height: 140px;
+}
+
+.navbar.navbar-sm {
+    height: 177px;
+    margin-top: 60px;
 }
 
 #brand-link {
@@ -111,10 +240,6 @@ body {
     margin-right: 50px;
     white-space: nowrap;
 }
-
-/*.navbar .nav-item:last-of-type {*/
-/*margin-right: 0;*/
-/*}*/
 
 .nav-item a {
     font-size: 25px;
@@ -141,6 +266,7 @@ body {
 
 .rounded-img {
     display: block;
+    max-width: 100%;
 }
 
 .separator {
@@ -157,7 +283,7 @@ body {
     display: block;
     height: 96px;
     width: 605px;
-    background-color: yellow;
+    background: url("/img/backplate.png");
     color: black;
     font-size: 50px;
     text-decoration: none;
@@ -178,7 +304,8 @@ body {
     padding-top: 62px;
     padding-bottom: 67px;
     color: #000000;
-    background-color: #ffaf17;
+    background: url("/img/footer.png") #ffaf17;
+    /*background-color: #ffaf17;*/
 }
 
 #footer #footer-logo {
@@ -200,6 +327,7 @@ body {
 }
 
 .footer-menu .nav-item .list-heading {
+    display: block;
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 40px;

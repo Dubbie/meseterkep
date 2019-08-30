@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hu">
+<html lang="hu" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,121 +8,157 @@
     <title>MeseTérKép</title>
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div id="hero">
-        <div class="navbar-container">
-            <nav class="navbar">
-                <a href="#!" id="brand-link" class="d-flex align-items-center w-100">
-                    <img id="brand-logo" src="/img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép">
-                    <span class="brand-text">MeseTérKép</span>
-                </a>
-                <ul class="nav-menu d-flex">
-                    <li class="nav-item">
-                        <a href="#!">services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!">our mission</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!">contact</a>
-                    </li>
-                </ul>
-                <div class="d-flex nav-icons">
-                    <div class="d-flex">
-                        <a href="#!" class="nav-icon"><img src="/img/instagram.png" alt=""></a>
-                        <a href="#!" class="nav-icon"><img src="/img/facebook.png" alt=""></a>
-                        <!--<a href="#!" class="nav-icon"><img src="/img/search.png" alt=""></a>-->
-                    </div>
+<div id="hero">
+    <div class="navbar-container">
+        <nav class="navbar align-items-start flex-nowrap navbar-expand-lg">
+            <a href="/" id="brand-link" class="d-flex align-items-center w-100">
+                <img id="brand-logo" src="/img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép">
+                <span class="brand-text">MeseTérKép</span>
+            </a>
+            <ul class="nav-menu d-flex">
+                <li class="nav-item">
+                    <a href="#!">services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!">our mission</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!">contact</a>
+                </li>
+            </ul>
+            <div class="d-flex nav-icons">
+                <div class="d-flex">
+                    <a href="#!" class="nav-icon"><img src="/img/instagram.png" alt=""></a>
+                    <a href="#!" class="nav-icon"><img src="/img/facebook.png" alt=""></a>
+                    <!--<a href="#!" class="nav-icon"><img src="/img/search.png" alt=""></a>-->
                 </div>
-            </nav>
-        </div>
-
-        <div class="floating-quote-container">
-            <i class="floating-quote text-white">Creative workshops blending modern literature and visual arts...</i>
-        </div>
+            </div>
+        </nav>
     </div>
-    <section id="links">
-        <div id="links-list" class="container d-flex justify-content-between align-items-center">
+
+    <div class="floating-quote-container">
+        <i class="floating-quote text-white">Creative workshops blending modern literature and visual arts...</i>
+    </div>
+</div>
+<section id="links">
+    <div class="row">
+        <div class="col-md-3 d-flex justify-content-center">
             <a href="/workshops.html">
                 <img src="/img/workshops.png" alt="" class="rounded-img">
             </a>
-            <a href="#!">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <a href="/birthdays.html">
                 <img src="/img/birthdays.png" alt="" class="rounded-img">
             </a>
-            <a href="#!">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <a href="/camps.html">
                 <img src="/img/camps.png" alt="" class="rounded-img">
             </a>
-            <a href="#!">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <a href="/our_mission.html">
                 <img src="/img/about_us.png" alt="" class="rounded-img">
             </a>
         </div>
-    </section>
-    <div id="homepage-first-separator" class="separator">
-        <a href="#!" class="btn btn-action">View Gallery</a>
     </div>
-    <section id="about-us">
-        <div class="container">
-            <div class="d-flex align-items-center mb-big">
-                <p class="font-weight-bold mr-big ml-md">The team of MeseTérKép was founded in January 2017 with the aim of holding tales-based creative workshops for children who crave for not every-day adventures. They operate in Pécs and the surrounding cities.</p>
-                <img src="/img/photo1.jpg" alt="" class="gallery-thumbnail">
-            </div>
-            <div class="d-flex align-items-center">
-                <img src="/img/photo2.jpg" alt="" class="gallery-thumbnail mr-big">
-                <p class="font-weight-bold">The creators of the concept are three young women working in different fields of education. Vilja is a big fan of children's museums, Kitti's a literature teacher and Réka is an art therapist. The project was created by combining the knowledge and ambition of the three.</p>
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="container">
-            <div class="d-flex align-items-start">
-                <img src="/img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép" class="mr-sm">
-                <div class="footer-menu-container d-flex w-100">
-                    <ul class="footer-menu mr-sm">
-                        <li class="nav-item">
-                            <a href="#!" class="list-heading">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/workshops.html">Workshops</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#!">Birthdays</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#!">Camps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#!">About Us</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-menu mr-sm">
-                        <li class="nav-item">
-                            <a href="#!" class="list-heading">Gallery</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-menu mr-sm">
-                        <li class="nav-item">
-                            <a href="#!" class="list-heading">Our mission</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-menu">
-                        <li class="nav-item">
-                            <a href="#!" class="list-heading">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-links d-flex align-self-end">
-                    <a href="#!" class="mr-xs">
-                        <img src="/img/instagram-dark.png" alt="">
-                    </a>
-                    <a href="#!">
-                        <img src="/img/facebook-dark.png" alt="">
-                    </a>
+</section>
+<div id="homepage-first-separator" class="separator">
+    <a href="/gallery.html" class="btn btn-action">View Gallery</a>
+</div>
+<section id="about-us">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <div class="ml-0 ml-md-5">
+                    <p class="font-weight-bold ml-0 ml-lg-5 mr-0 mr-lg-5 mb-3 mb-lg-0">The team of MeseTérKép was founded in January 2017 with the aim
+                        of holding tales-based creative workshops for children who crave for not every-day adventures. They
+                        operate in Pécs and the surrounding cities.</p>
                 </div>
             </div>
+            <div class="col-lg-6 text-center">
+                <img src="/img/photo1.jpg" alt="" class="img img-fluid">
+            </div>
         </div>
-    </footer>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center">
+                <img src="/img/photo2.jpg" alt="" class="img img-fluid mb-3 mb-lg-0">
+            </div>
+            <div class="col-lg-6">
+                <div class="ml-0 ml-lg-5">
+                    <p class="font-weight-bold ml-0 ml-lg-5">The creators of the concept are three young women working in
+                        different fields of education. Vilja is a big fan of children's museums, Kitti's a literature
+                        teacher and Réka is an art therapist. The project was created by combining the knowledge and
+                        ambition of the three.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+        <div class="d-flex align-items-start">
+            <img src="/img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép" class="mr-5">
+            <div class="footer-menu-container d-flex w-100">
+                <ul class="footer-menu mr-sm">
+                    <li class="nav-item">
+                        <a href="#!" class="list-heading">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/workshops.html">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!">Birthdays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!">Camps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!">About Us</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu mr-sm">
+                    <li class="nav-item">
+                        <a href="#!" class="list-heading">Gallery</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu mr-sm">
+                    <li class="nav-item">
+                        <a href="#!" class="list-heading">Our mission</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="nav-item">
+                        <a href="#!" class="list-heading">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links d-flex align-self-end">
+                <a href="#!" class="mr-xs">
+                    <img src="/img/instagram-dark.png" alt="">
+                </a>
+                <a href="#!">
+                    <img src="/img/facebook-dark.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,14 +8,17 @@
     <title>MeseTérKép</title>
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <div id="workshops-hero" class="hero">
     <div class="navbar-container">
-        <nav class="navbar navbar-sm">
-            <a href="#!" id="brand-link" class="d-flex align-items-center w-100">
+        <nav class="navbar align-items-start flex-nowrap navbar-expand-lg">
+            <a href="/" id="brand-link" class="d-flex align-items-center w-100">
                 <img id="brand-logo" src="/img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép">
                 <span class="brand-text">MeseTérKép</span>
             </a>
@@ -24,7 +27,7 @@
                     <a href="#!">services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#!">our mission</a>
+                    <a href="/our_mission.html">our mission</a>
                 </li>
                 <li class="nav-item">
                     <a href="#!">contact</a>
@@ -43,23 +46,26 @@
 <section id="camps-content">
     <div class="container">
         <div id="birthday-programmes" class="d-flex justify-content-between">
-            <div class="d-flex justify-content-between">
-                <div id="camps" class="program">
+            <div class="programmes row">
+                <div class="col-2 col-lg-3 program">
                     <h3 class="font-weight-bold">Camps:</h3>
                     <p class="font-weight-bold mb-0">Galactic Camp<br>Integration Camp</p>
                 </div>
-                <div id="pricing" class="program">
+                <div class="col-2 col-lg-3 program">
                     <h3 class="font-weight-bold">Price:</h3>
                     <p class="mb-0 font-weight-bold">The program from 8:00-16:00, the lunch & afternoon snack are included.
                         <br>Galactic Camp: 32000 HUF <br>Integration Camp: 18000 HUF</p>
                 </div>
-                <div id="dates" class="program">
+                <div class="col-2 col-lg-3 program">
                     <h3 class="font-weight-bold">Dates:</h3>
                     <p class="font-weight-bold">Galactic Camp <br>August 12-16</p>
                     <p class="mb-0 font-weight-bold">Integration Camp <br>August 26-30</p>
+                    <a href="#!" class="button button-sm mt-5">Apply Now!</a>
+                </div>
+                <div class="col-2 col-lg-3">
+                    <img src="/img/workshops_icon.png" alt="" class="big-icon">
                 </div>
             </div>
-            <img src="/img/workshops_icon.png" alt="" class="big-icon">
         </div>
 
         <div class="d-flex justify-content-center">

@@ -16,6 +16,11 @@ section {
     position: relative;
 }
 
+section#links {
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
 section .container {
     z-index: 2;
 }
@@ -175,17 +180,8 @@ ol, ul {
     z-index: -1;
 }
 
-#workshops-programmes {
+.programmes {
     margin-bottom: 150px;
-}
-
-#workshops-programmes .program {
-    margin-right: 100px;
-    max-width: 320px;
-}
-
-#workshops-programmes .program:last-of-type {
-    margin-right: 0;
 }
 
 .big-icon {
@@ -194,17 +190,8 @@ ol, ul {
     height: 385px;
 }
 
-#birthday-programmes {
+.programmes {
     margin-bottom: 150px;
-}
-
-#birthday-programmes .program {
-    max-width: 500px;
-    margin-right: 100px;
-}
-
-#birthday-programmes .program:last-of-type {
-    margin-right: 0;
 }
 
 .floating-quote-container {
@@ -298,12 +285,10 @@ ol, ul {
     display: flex;
     background-color: rgba(69, 153, 147, 0.5);
     padding: 18px 119px;
-    height: 140px;
 }
 
 .navbar.navbar-sm {
     height: 177px;
-    margin-top: 60px;
 }
 
 #brand-link {
@@ -316,7 +301,7 @@ ol, ul {
 
 #brand-link .brand-text {
     color: #ffffff;
-    font-size: 87px;
+    font-size: 5.45rem;
 }
 
 .navbar .nav-item {
@@ -359,11 +344,11 @@ ol, ul {
     background-color: gray;
 }
 
-.btn:hover {
+.button:hover {
     cursor: pointer;
 }
 
-.btn.btn-sm {
+.button.button-sm {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -374,7 +359,7 @@ ol, ul {
     text-decoration: none;
 }
 
-.btn.btn-action {
+.button.button-action {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -395,10 +380,6 @@ ol, ul {
     padding-bottom: 226px;
 }
 
-#about-us img {
-    min-width: 783px;
-}
-
 #footer {
     padding-top: 62px;
     padding-bottom: 67px;
@@ -414,6 +395,8 @@ ol, ul {
 
 #footer #footer-logo {
     filter: invert(100%);
+    width: 104px;
+    height: 141px;
 }
 
 .footer-menu-container {

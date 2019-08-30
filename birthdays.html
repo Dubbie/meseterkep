@@ -8,14 +8,17 @@
     <title>MeseTérKép</title>
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <div id="workshops-hero" class="hero">
     <div class="navbar-container">
-        <nav class="navbar navbar-sm">
-            <a href="#!" id="brand-link" class="d-flex align-items-center w-100">
+        <nav class="navbar align-items-start flex-nowrap navbar-expand-lg">
+            <a href="/" id="brand-link" class="d-flex align-items-center w-100">
                 <img id="brand-logo" src="/img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép">
                 <span class="brand-text">MeseTérKép</span>
             </a>
@@ -42,9 +45,9 @@
 </div>
 <section id="birthdays-content">
     <div class="container">
-        <div id="birthday-programmes" class="d-flex justify-content-between">
-            <div class="d-flex justify-content-between">
-                <div id="includes" class="program">
+        <div id="birthday-programmes" class="programmes d-flex justify-content-between">
+            <div class="row">
+                <div class="col-lg-4 program">
                     <h3 class="font-weight-bold">The experience includes:</h3>
                     <ul class="font-weight-bold">
                         <li>2h of active occupation, thematic games and crafting</li>
@@ -57,14 +60,39 @@
                         <li>snacks/ drinks/ napkins</li>
                     </ul>
                 </div>
-                <div id="pricing" class="program">
+                <div class="col-lg-4 program">
                     <h3 class="font-weight-bold">Pricing:</h3>
                     <p class="mb-0 font-weight-bold">Up to 15 people (2 animators):<br>38.000 HUF</p>
                     <p class="font-weight-bold">Up to 15 people (3 animators) +<br>1500 HUF / person</p>
-                    <a href="#!" class="btn btn-sm">Book Birthday!</a>
+                    <a href="#!" class="button button-sm">Book Birthday!</a>
+                </div>
+                <div class="col-lg-4 text-right">
+                    <img src="/img/workshops_icon.png" alt="" class="mw-100">
                 </div>
             </div>
-            <img src="/img/workshops_icon.png" alt="" class="big-icon">
+
+            <!--<div class="d-flex justify-content-between">-->
+                <!--<div id="includes" class="program">-->
+                    <!--<h3 class="font-weight-bold">The experience includes:</h3>-->
+                    <!--<ul class="font-weight-bold">-->
+                        <!--<li>2h of active occupation, thematic games and crafting</li>-->
+                        <!--<li>CD with photos made on birthday</li>-->
+                        <!--<li>The design and materials of the themed decoration</li>-->
+                    <!--</ul>-->
+                    <!--<h3 class="font-weight-bold">The parents shall provide:</h3>-->
+                    <!--<ul class="font-weight-bold">-->
+                        <!--<li>cake/ candle/ match/ knife</li>-->
+                        <!--<li>snacks/ drinks/ napkins</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div id="pricing" class="program">-->
+                    <!--<h3 class="font-weight-bold">Pricing:</h3>-->
+                    <!--<p class="mb-0 font-weight-bold">Up to 15 people (2 animators):<br>38.000 HUF</p>-->
+                    <!--<p class="font-weight-bold">Up to 15 people (3 animators) +<br>1500 HUF / person</p>-->
+                    <!--<a href="#!" class="btn btn-sm">Book Birthday!</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<img src="/img/workshops_icon.png" alt="" class="big-icon">-->
         </div>
 
         <div class="d-flex justify-content-center">

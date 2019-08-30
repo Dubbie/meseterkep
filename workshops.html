@@ -8,14 +8,17 @@
     <title>MeseTérKép</title>
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <div id="workshops-hero" class="hero">
     <div class="navbar-container">
-        <nav class="navbar navbar-sm">
-            <a href="#!" id="brand-link" class="d-flex align-items-center w-100">
+        <nav class="navbar align-items-start flex-nowrap navbar-expand-lg">
+            <a href="/" id="brand-link" class="d-flex align-items-center w-100">
                 <img id="brand-logo" src="/img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép">
                 <span class="brand-text">MeseTérKép</span>
             </a>
@@ -24,7 +27,7 @@
                     <a href="#!">services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#!">our mission</a>
+                    <a href="/our_mission.html">our mission</a>
                 </li>
                 <li class="nav-item">
                     <a href="#!">contact</a>
@@ -42,24 +45,26 @@
 </div>
 <section id="workshops-content">
     <div class="container">
-        <div id="workshops-programmes" class="d-flex justify-content-between">
-            <div class="d-flex justify-content-between">
-                <div id="programs" class="program">
+        <div id="workshops-programmes" class="programmes">
+            <div class="row">
+                <div class="col-6 col-lg-3 program">
                     <h3 class="font-weight-bold">Programs:</h3>
                     <p class="mb-0 font-weight-bold">Baby and parent / Primary school</p>
                 </div>
-                <div id="schedule" class="program">
+                <div class="col-6 col-lg-3 program">
                     <h3 class="font-weight-bold">Schedule:</h3>
                     <p class="font-weight-bold">Baby and parent: <br>every 3rd Monday of the Month from 10:00-11:00</p>
                     <p class="mb-0 font-weight-bold">Primary school: <br>Thursdays 16:30-18:00</p>
                 </div>
-                <div id="location" class="program">
+                <div class="col-6 col-lg-3 program">
                     <h3 class="font-weight-bold">Location:</h3>
                     <p class="font-weight-bold">Pécsi Pagony <br>(Pécs, Széchenyi tér 2.)</p>
-                    <a href="#!" class="btn btn-sm">Book Workshop!</a>
+                    <a href="#!" class="button button-sm mw-100">Book Workshop!</a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img src="/img/workshops_icon.png" alt="" class="mw-100">
                 </div>
             </div>
-            <img src="/img/workshops_icon.png" alt="" class="big-icon">
         </div>
 
         <div class="d-flex justify-content-center">

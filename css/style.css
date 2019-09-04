@@ -6,8 +6,9 @@
 
 body {
     font-family: 'Comfortaa', cursive;
-    font-size: 25px;
+    font-size: 25px;    
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 section {
@@ -45,12 +46,61 @@ ol, ul {
     z-index: 10;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 .text-huge {
     font-size: 83px;
 }
 
 .font-weight-black {
     font-weight: 900 !important;
+}
+
+.navbar-container {
+    padding-top: 60px;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(69, 153, 147, 0.5);
+    padding: 18px 119px;
+}
+
+.navbar.navbar-sm {
+    height: 177px;
+}
+
+#brand-link {
+    text-decoration: none;
+}
+
+#brand-link .brand-text {
+    color: #ffffff;
+    font-size: 5.45rem;
+}
+
+.navbar .nav-item {
+    white-space: nowrap;
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+}
+
+.form-control {
+    border: 0;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    height: calc(1.5em + 2rem);
 }
 
 #homepage-first-separator {
@@ -82,6 +132,17 @@ ol, ul {
 
 #workshops-content::before {
     content: 'Workshops';
+    color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    font-weight: 700;
+    font-size: 316px;
+    z-index: -1;
+}
+
+#contact-content::before {
+    content: 'Contact';
     color: #fafafa;
     position: absolute;
     top: 0;
@@ -167,44 +228,6 @@ ol, ul {
     max-width: 780px;
 }
 
-.navbar-container {
-    padding-top: 60px;
-}
-
-.navbar {
-    display: flex;
-    background-color: rgba(69, 153, 147, 0.5);
-    padding: 18px 119px;
-}
-
-.navbar.navbar-sm {
-    height: 177px;
-}
-
-#brand-link {
-    text-decoration: none;
-}
-
-#brand-link .brand-text {
-    color: #ffffff;
-    font-size: 5.45rem;
-}
-
-.navbar .nav-item {
-    white-space: nowrap;
-}
-
-.navbar .nav-item .nav-link {
-    font-size: 25px;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.navbar-toggler {
-    color: #ffffff;
-}
-
 #links-list {
     height: 668px;
 }
@@ -233,6 +256,7 @@ ol, ul {
     height: 71px;
     color: #000;
     text-decoration: none;
+    border: 0;
 }
 
 .button.button-action {

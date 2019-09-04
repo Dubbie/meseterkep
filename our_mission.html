@@ -17,28 +17,34 @@
 <body>
 <div id="workshops-hero" class="hero">
     <div class="navbar-container">
-        <nav class="navbar navbar-sm">
-            <a href="#!" id="brand-link" class="d-flex align-items-center w-100">
-                <img id="brand-logo" src="/img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép">
-                <span class="brand-text">MeseTérKép</span>
-            </a>
-            <ul class="nav-menu d-flex">
-                <li class="nav-item">
-                    <a href="/services.html">services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/our_mission.html">our mission</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/contact.html">contact</a>
-                </li>
-            </ul>
-            <div class="d-flex nav-icons">
-                <div class="d-flex">
-                    <a href="#!" class="nav-icon"><img src="/img/instagram.png" alt=""></a>
-                    <a href="#!" class="nav-icon"><img src="/img/facebook.png" alt=""></a>
-                    <!--<a href="#!" class="nav-icon"><img src="/img/search.png" alt=""></a>-->
-                </div>
+        <nav class="navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a href="/" id="brand-link" class="d-flex align-items-center w-100">
+                    <img id="brand-logo" src="/img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép"
+                         class="d-none d-lg-block">
+                    <span class="brand-text ml-0 ml-md-4">MeseTérKép</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/img/menu.png" class="navbar-toggler-icon">
+                </button>
+            </div>
+            <div id="navbar-menu" class="collapse navbar-collapse align-self-start">
+                <ul class="navbar-nav ml-0">
+                    <li class="nav-item mr-4">
+                        <a href="/" class="nav-link">services</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a href="/our_mission.html" class="nav-link">our mission</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a href="/contact.html" class="nav-link">contact</a>
+                    </li>
+                    <li class="nav-item d-flex ml-1 ml-lg-4">
+                        <a href="#!" class="nav-link mr-4 mr-xl-0"><img src="/img/instagram.png" alt=""></a>
+                        <a href="#!" class="nav-link"><img src="/img/facebook.png" alt=""></a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -111,44 +117,78 @@
 </section>
 <footer id="footer">
     <div class="container">
-        <div class="d-flex align-items-start">
-            <img src="/img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép" class="mr-5">
-            <div class="footer-menu-container d-flex w-100">
-                <ul class="footer-menu mr-5">
-                    <li class="nav-item">
-                        <a href="#!" class="list-heading">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/workshops.html">Workshops</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/birthdays.html">Birthdays</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/camps.html">Camps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/">About Us</a>
-                    </li>
-                </ul>
-                <ul class="footer-menu mr-5">
-                    <li class="nav-item">
-                        <a href="/our_mission.html" class="list-heading">Our mission</a>
-                    </li>
-                </ul>
-                <ul class="footer-menu">
-                    <li class="nav-item">
-                        <a href="/contact.html" class="list-heading">Contact</a>
-                    </li>
-                </ul>
+        <div class="row">
+            <div class="col-md-2 col-xl-1 text-center">
+                <img src="/img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép"
+                     class="mr-0 mr-md-5">
             </div>
-            <div class="footer-links d-flex align-self-end">
-                <a href="#!" class="mr-2">
-                    <img src="/img/instagram-dark.png" alt="">
-                </a>
-                <a href="#!">
-                    <img src="/img/facebook-dark.png" alt="">
-                </a>
+            <div class="col-md-8 col-xl-9 d-flex justify-content-center mb-4 mb-md-0">
+                <!-- Collapse megoldás... -->
+                <!--<div class="footer-menu-container d-flex justify-content-center justify-content-md-start w-100">-->
+                <!--<ul class="footer-menu mr-2 mr-md-5">-->
+                <!--<li class="nav-item">-->
+                <!--<a href="#footer-services-menu" data-toggle="collapse" class="list-heading" role="button">Services</a>-->
+
+                <!--<div class="collapse" id="footer-services-menu">-->
+                <!--<a href="/workshops.html" class="d-block">Workshops</a>-->
+                <!--<a href="/birthdays.html" class="d-block">Birthdays</a>-->
+                <!--<a href="/camps.html" class="d-block">Camps</a>-->
+                <!--<a href="/" class="d-block">About Us</a>-->
+                <!--</div>-->
+                <!--</li>-->
+
+                <!--</ul>-->
+                <!--<ul class="footer-menu mr-2 mr-md-5">-->
+                <!--<li class="nav-item">-->
+                <!--<a href="/our_mission.html" class="list-heading">Our mission</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--<ul class="footer-menu">-->
+                <!--<li class="nav-item">-->
+                <!--<a href="/contact.html" class="list-heading">Contact</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+
+                <div class="footer-menu-container d-flex justify-content-center justify-content-md-start w-100">
+                    <ul class="footer-menu mr-2 mr-md-5">
+                        <li class="nav-item">
+                            <a href="/" class="list-heading">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/workshops.html">Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/birthdays.html">Birthdays</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/camps.html">Camps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/">About Us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu mr-2 mr-md-5">
+                        <li class="nav-item">
+                            <a href="/our_mission.html" class="list-heading">Our mission</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="nav-item">
+                            <a href="/contact.html" class="list-heading">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center justify-content-md-end">
+                <div class="footer-links d-flex align-self-end">
+                    <a href="#!" class="mr-2">
+                        <img src="/img/instagram-dark.png" alt="" class="d-block">
+                    </a>
+                    <a href="#!">
+                        <img src="/img/facebook-dark.png" alt="" class="d-block">
+                    </a>
+                </div>
             </div>
         </div>
     </div>

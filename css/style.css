@@ -53,46 +53,6 @@ ol, ul {
     font-weight: 900 !important;
 }
 
-.d-flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.align-items-start {
-    align-items: flex-start;
-}
-
-.align-items-end {
-    align-items: flex-end;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.align-self-end {
-    align-self: flex-end;
-}
-
-.justify-content-between {
-    justify-content: space-between;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.w-100 {
-    width: 100%;
-}
-
 #homepage-first-separator {
     background: url("/img/separator1.png");
 }
@@ -141,10 +101,6 @@ ol, ul {
     height: 385px;
 }
 
-.programmes {
-    margin-bottom: 150px;
-}
-
 .floating-quote-container {
     position: absolute;
     top: 350px;
@@ -159,64 +115,6 @@ ol, ul {
     font-size: 80px;
     word-wrap: break-word;
     line-height: 1.1;
-}
-
-.main-panel {
-    position: relative;
-    width: 1020px;
-    background-color: #e5e5e5;
-    padding-top: 73px;
-    padding-bottom: 73px;
-    margin-bottom: 70px;
-}
-
-.main-panel-img {
-    width: 540px;
-    height: 540px;
-}
-
-.main-panel-img-left {
-    position: absolute;
-    top: -70px;
-    left: -90px;
-}
-
-.main-panel-img-right {
-    position: absolute;
-    bottom: -70px;
-    right: -90px;
-}
-
-.main-panel-text-left {
-    margin-left: 570px;
-    padding-right: 30px;
-    margin-bottom: 220px;
-}
-
-.main-panel-text-right {
-    padding-left: 70px;
-    max-width: 480px;
-}
-
-.main-panel.main-panel-inverted .main-panel-text-left {
-    margin-left: 70px;
-    max-width: 420px;
-    margin-bottom: 0;
-}
-
-.main-panel.main-panel-inverted .main-panel-img-left {
-    right: -90px;
-    left: auto;
-}
-
-.main-panel.main-panel-inverted .main-panel-img-right {
-    left: -90px;
-}
-
-.main-panel.main-panel-inverted .main-panel-text-right {
-    margin-left: 570px;
-    padding-left: 0;
-    max-width: 400px;
 }
 
 .panel {
@@ -287,38 +185,24 @@ ol, ul {
     text-decoration: none;
 }
 
-#brand-link #brand-logo {
-    margin-right: 55px;
-}
-
 #brand-link .brand-text {
     color: #ffffff;
     font-size: 5.45rem;
 }
 
 .navbar .nav-item {
-    display: inline-block;
-    margin-right: 50px;
     white-space: nowrap;
 }
 
-.nav-item a {
+.navbar .nav-item .nav-link {
     font-size: 25px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
 }
 
-.nav-icons {
-    margin-left: 50px;
-}
-
-.nav-icon {
-    margin-right: 29px;
-}
-
-.nav-icon:last-of-type {
-    margin-right: 0;
+.navbar-toggler {
+    color: #ffffff;
 }
 
 #links-list {
@@ -506,6 +390,49 @@ ol, ul {
     opacity: 1;
 }
 
+/* Fejléc reszponzivitás */
+@media (max-width: 1483px) {
+    .navbar {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 1287px) {
+    .navbar .nav-item.mr-4 {
+        margin-right: 0.25rem !important;
+    }
+
+    .navbar .nav-item.ml-lg-4 {
+        margin-left: 0.25rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #brand-link .brand-text {
+        font-size: 2.5rem;
+    }
+
+    .floating-quote-container {
+        right: 0;
+        left: 0;
+    }
+
+    .floating-quote {
+        font-size: 2.5rem;
+    }
+
+    section#links,
+    section.section-padded {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-menu-container {
+        margin-top: 30px;
+    }
+}
+
+/* Paneles dolgok */
 @media (max-width: 1200px) {
     .panel .panel-image-top-left,
     .panel .panel-image-top-right,

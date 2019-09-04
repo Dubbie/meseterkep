@@ -16,6 +16,11 @@ section {
     position: relative;
 }
 
+section.section-padded {
+    padding-top: 226px;
+    padding-bottom: 226px;
+}
+
 section#links {
     padding-top: 170px;
     padding-bottom: 170px;
@@ -40,66 +45,12 @@ ol, ul {
     z-index: 10;
 }
 
-.text-white {
-    color: #ffffff !important;
-}
-
-.text-right {
-    text-align: right !important;
-}
-
-.text-left {
-    text-align: left !important;
-}
-
-.text-center {
-    text-align: center !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .text-huge {
     font-size: 83px;
 }
 
-.font-weight-bold {
-    font-weight: 700 !important;
-}
-
 .font-weight-black {
     font-weight: 900 !important;
-}
-
-.mb-0 {
-    margin-bottom: 0 !important;
-}
-
-.mb-sm {
-    margin-bottom: 60px;
-}
-
-.ml-sm {
-    margin-left: 60px;
-}
-
-.ml-md {
-    margin-left: 72px;
-}
-
-.mr-big {
-    margin-right: 120px !important;
-}
-
-.mr-sm {
-    margin-right: 60px !important;
-}
-
-.mr-xs {
-    margin-right: 20px !important;
-}
-
-.mb-big {
-    margin-bottom: 120px;
 }
 
 .d-flex {
@@ -268,6 +219,47 @@ ol, ul {
     max-width: 400px;
 }
 
+.panel {
+    position: relative;
+    max-width: 1020px;
+    background-color: #e5e5e5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.panel .panel-image-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-20%, -20%);
+}
+
+.panel .panel-image-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -20%);
+}
+
+.panel .panel-image-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-20%, 20%);
+}
+
+.panel .panel-image-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(20%, 20%);
+}
+
+.no-rel {
+    position: inherit;
+}
+
 .mission-quote {
     font-family: serif;
     font-style: italic;
@@ -375,11 +367,6 @@ ol, ul {
     line-height: 96px;
 }
 
-#about-us {
-    padding-top: 226px;
-    padding-bottom: 226px;
-}
-
 #footer {
     padding-top: 62px;
     padding-bottom: 67px;
@@ -422,4 +409,112 @@ ol, ul {
 
 .footer-links a {
     text-decoration: none;
+}
+
+.meseterkep-interactive {
+    position: relative;
+    width: 1073px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 280px;
+}
+
+.meseterkep-interactive-image {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.meseterkep-interactive-image .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #63bab2;
+    opacity: 0.5;
+    transition: opacity 250ms ease-in-out;
+}
+
+.meseterkep-interactive-image:hover .img-overlay {
+    opacity: 0;
+}
+
+.meseterkep-interactive-image img {
+    display: block;
+}
+
+.meseterkep-interactive .img-label {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .meseterkep-interactive .img-label {
+        font-size: 1rem;
+    }
+
+    .meseterkep-interactive {
+        margin-bottom: 140px;
+    }
+}
+
+.meseterkep-interactive .vilja-arato {
+    top: 0;
+    left: 0;
+}
+
+.meseterkep-interactive .kitti-varga {
+    top: 0;
+    right: 0;
+}
+
+.meseterkep-interactive .reka-szaloki {
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.meseterkep-interactive .vilja-arato,
+.meseterkep-interactive .kitti-varga,
+.meseterkep-interactive .reka-szaloki {
+    position: absolute;
+    max-width: 280px;
+    width: 25vw;
+    line-height: 1;
+}
+
+.meseterkep-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 493px;
+    height: 493px;
+    max-width: 100%;
+    text-align: left;
+    padding: 75px;
+    opacity: 0;
+    background-color: #63bab2;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 250ms ease-in-out;
+}
+
+.meseterkep-popup.show {
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .panel .panel-image-top-left,
+    .panel .panel-image-top-right,
+    .panel .panel-image-bottom-left,
+    .panel .panel-image-bottom-right {
+        position: inherit;
+        transform: translate(0, 0);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

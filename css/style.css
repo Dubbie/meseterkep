@@ -105,11 +105,11 @@ h2 {
 }
 
 #homepage-first-separator {
-    background: url("/img/separator1.png");
+    background: url("../img/separator1.png");
 }
 
 #hero {
-    background: #ffaf17 url("/img/hero.png") no-repeat center center;
+    background: #ffaf17 url("../img/hero.png") no-repeat center center;
     height: 100vh;
 }
 
@@ -118,23 +118,23 @@ min-height: 549px;
 }
 
 #workshops-hero {
-    background: #ffaf17 url("/img/workshops_hero.png") no-repeat center center;
+    background: #ffaf17 url("../img/workshops_hero.png") no-repeat center center;
 }
 
 #birthdays-hero {
-    background: #ffaf17 url("/img/birthdays_hero.png") no-repeat center center;
+    background: #ffaf17 url("../img/birthdays_hero.png") no-repeat center center;
 }
 
 #camps-hero {
-    background: #ffaf17 url("/img/camps_hero.png") no-repeat center center;
+    background: #ffaf17 url("../img/camps_hero.png") no-repeat center center;
 }
 
 #our-mission-hero {
-    background: #ffaf17 url("/img/our_mission_hero.png") no-repeat center center;
+    background: #ffaf17 url("../img/our_mission_hero.png") no-repeat center center;
 }
 
 #contact-hero {
-    background: #ffaf17 url("/img/contact_hero.png") no-repeat center center;
+    background: #ffaf17 url("../img/contact_hero.png") no-repeat center center;
 }
 
 .program h3 {
@@ -316,7 +316,7 @@ min-height: 549px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: url("/img/btn.png");
+    background: url("../img/btn.png");
     width: 288px;
     height: 71px;
     color: #000;
@@ -332,7 +332,7 @@ min-height: 549px;
     display: block;
     height: 96px;
     width: 605px;
-    background: url("/img/backplate.png");
+    background: url("../img/backplate.png");
     color: black;
     font-size: 50px;
     text-decoration: none;
@@ -484,7 +484,7 @@ min-height: 549px;
     padding-top: 62px;
     padding-bottom: 67px;
     color: #000000;
-    background: url("/img/footer.png") #ffaf17;
+    background: url("../img/footer.png") #ffaf17;
     /*background-color: #ffaf17;*/
 }
 

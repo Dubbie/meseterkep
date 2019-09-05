@@ -66,6 +66,7 @@ h2 {
     display: flex;
     background-color: rgba(69, 153, 147, 0.5);
     padding: 18px 119px;
+    z-index: 9999;
 }
 
 .navbar.navbar-sm {
@@ -204,14 +205,20 @@ min-height: 549px;
     z-index: -1;
 }
 
-.programmes {
-    margin-bottom: 150px;
-}
-
 .big-icon {
     display: block;
     width: 390px;
     height: 385px;
+    object-fit: contain;
+}
+
+.mission-quote {
+    font-family: serif;
+    font-style: italic;
+    font-size: 70px;
+    word-wrap: break-word;
+    line-height: 1.1;
+    max-width: 780px;
 }
 
 .floating-quote-container {
@@ -230,12 +237,14 @@ min-height: 549px;
     line-height: 1.1;
 }
 
+/* Paneles dolgok */
 .panel {
     position: relative;
     max-width: 1020px;
     background-color: #e5e5e5;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 150px;
     margin-bottom: 70px;
 }
 
@@ -271,13 +280,17 @@ min-height: 549px;
     position: inherit;
 }
 
-.mission-quote {
-    font-family: serif;
-    font-style: italic;
-    font-size: 70px;
-    word-wrap: break-word;
-    line-height: 1.1;
-    max-width: 780px;
+@media (max-width: 1200px) {
+    .panel .panel-image-top-left,
+    .panel .panel-image-top-right,
+    .panel .panel-image-bottom-left,
+    .panel .panel-image-bottom-right {
+        position: inherit;
+        transform: translate(0, 0);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 #links-list {
@@ -325,50 +338,6 @@ min-height: 549px;
     text-decoration: none;
     text-align: center;
     line-height: 96px;
-}
-
-#footer {
-    padding-top: 62px;
-    padding-bottom: 67px;
-    color: #000000;
-    background: url("/img/footer.png") #ffaf17;
-    /*background-color: #ffaf17;*/
-}
-
-#footer ul {
-    list-style: none;
-    margin: 0;
-}
-
-#footer #footer-logo {
-    filter: invert(100%);
-    width: 104px;
-    height: 141px;
-}
-
-.footer-menu-container {
-    margin-top: 100px;
-}
-
-.footer-menu {
-    line-height: 1.25;
-}
-
-.footer-menu .nav-item a {
-    color: #000000;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.footer-menu .nav-item .list-heading {
-    display: block;
-    font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 40px;
-}
-
-.footer-links a {
-    text-decoration: none;
 }
 
 .meseterkep-interactive {
@@ -508,16 +477,46 @@ min-height: 549px;
     }
 }
 
-/* Paneles dolgok */
-@media (max-width: 1200px) {
-    .panel .panel-image-top-left,
-    .panel .panel-image-top-right,
-    .panel .panel-image-bottom-left,
-    .panel .panel-image-bottom-right {
-        position: inherit;
-        transform: translate(0, 0);
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+#footer {
+    padding-top: 62px;
+    padding-bottom: 67px;
+    color: #000000;
+    background: url("/img/footer.png") #ffaf17;
+    /*background-color: #ffaf17;*/
+}
+
+#footer ul {
+    list-style: none;
+    margin: 0;
+}
+
+#footer #footer-logo {
+    filter: invert(100%);
+    width: 104px;
+    height: 141px;
+}
+
+.footer-menu-container {
+    margin-top: 100px;
+}
+
+.footer-menu {
+    line-height: 1.25;
+}
+
+.footer-menu .nav-item a {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer-menu .nav-item .list-heading {
+    display: block;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.footer-links a {
+    text-decoration: none;
 }

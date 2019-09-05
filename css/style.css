@@ -112,9 +112,28 @@ h2 {
     height: 100vh;
 }
 
+.hero.small {
+min-height: 549px;
+}
+
 #workshops-hero {
     background: #ffaf17 url("/img/workshops_hero.png") no-repeat center center;
-    min-height: 549px;
+}
+
+#birthdays-hero {
+    background: #ffaf17 url("/img/birthdays_hero.png") no-repeat center center;
+}
+
+#camps-hero {
+    background: #ffaf17 url("/img/camps_hero.png") no-repeat center center;
+}
+
+#our-mission-hero {
+    background: #ffaf17 url("/img/our_mission_hero.png") no-repeat center center;
+}
+
+#contact-hero {
+    background: #ffaf17 url("/img/contact_hero.png") no-repeat center center;
 }
 
 .program h3 {
@@ -132,6 +151,39 @@ h2 {
 
 #workshops-content::before {
     content: 'Workshops';
+    color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    font-weight: 700;
+    font-size: 316px;
+    z-index: -1;
+}
+
+#birthdays-content::before {
+    content: 'Birthdays';
+    color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    font-weight: 700;
+    font-size: 316px;
+    z-index: -1;
+}
+
+#camps-content::before {
+    content: 'Camps';
+    color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    font-weight: 700;
+    font-size: 316px;
+    z-index: -1;
+}
+
+#our-mission-content::before {
+    content: 'mission';
     color: #fafafa;
     position: absolute;
     top: 0;

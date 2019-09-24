@@ -54,6 +54,10 @@ h2 {
     font-size: 6vw;
 }
 
+.text-small {
+    font-size: 1.25rem;
+}
+
 .font-weight-black {
     font-weight: 900 !important;
 }
@@ -406,16 +410,6 @@ h2 {
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
-    .meseterkep-interactive .img-label {
-        font-size: 1rem;
-    }
-
-    .meseterkep-interactive {
-        margin-bottom: 140px;
-    }
-}
-
 .meseterkep-interactive .vilja-arato {
     top: 0;
     left: 0;
@@ -461,6 +455,24 @@ h2 {
 
 .meseterkep-popup.show {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .meseterkep-interactive-image .img-overlay {
+        opacity: 0;
+    }
+
+    .meseterkep-interactive .img-label {
+        font-size: 1rem;
+    }
+
+    .meseterkep-interactive {
+        margin-bottom: 140px;
+    }
+
+    .meseterkep-popup.show {
+        display: none;
+    }
 }
 
 /* Fejléc reszponzivitás */

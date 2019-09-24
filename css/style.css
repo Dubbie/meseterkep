@@ -51,7 +51,7 @@ h2 {
 }
 
 .text-huge {
-    font-size: 83px;
+    font-size: 6vw;
 }
 
 .font-weight-black {
@@ -97,6 +97,12 @@ h2 {
     color: #ffffff;
 }
 
+#header-services-menu a {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-left: 1.25rem;
+}
+
 .form-control {
     border: 0;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.05);
@@ -114,7 +120,17 @@ h2 {
 }
 
 .hero.small {
-min-height: 549px;
+    min-height: 549px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-container {
+        padding-top: 0;
+    }
+
+    .hero.small {
+        min-height: 240px;
+    }
 }
 
 #workshops-hero {
@@ -135,6 +151,14 @@ min-height: 549px;
 
 #contact-hero {
     background: #ffaf17 url("../img/contact_hero.png") no-repeat center center;
+}
+
+#workshops-hero,
+#birthdays-hero,
+#camps-hero,
+#our-mission-hero,
+#contact-hero {
+    background-size: cover;
 }
 
 .program h3 {
@@ -242,10 +266,7 @@ min-height: 549px;
     position: relative;
     max-width: 1020px;
     background-color: #e5e5e5;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    margin-bottom: 70px;
+    margin: 150px auto 70px auto;
 }
 
 .panel .panel-image-top-left {
@@ -290,6 +311,13 @@ min-height: 549px;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .panel {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -409,7 +437,7 @@ min-height: 549px;
 .meseterkep-interactive .reka-szaloki {
     position: absolute;
     max-width: 280px;
-    width: 25vw;
+    width: 20vw;
     line-height: 1;
 }
 
@@ -465,7 +493,8 @@ min-height: 549px;
         max-width: 100%;
     }
 
-    .floating-quote {
+    .floating-quote,
+    .mission-quote {
         font-size: 10vw;
     }
 
@@ -473,10 +502,6 @@ min-height: 549px;
     section.section-padded {
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-
-    .footer-menu-container {
-        margin-top: 30px;
     }
 }
 
@@ -522,4 +547,19 @@ min-height: 549px;
 
 .footer-links a {
     text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .footer-menu-container {
+        margin-top: 30px;
+    }
+
+    .footer-menu .nav-item .list-heading,
+    .footer-menu .nav-item {
+        text-align: center;
+    }
+
+    .footer-menu .nav-item .list-heading {
+        margin-bottom: 0.25rem;
+    }
 }

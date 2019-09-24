@@ -20,7 +20,7 @@
     <div class="navbar-container">
         <nav class="navbar navbar-expand-xl">
             <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="./index.html" id="brand-link" class="d-flex align-items-center w-100">
+                <a href="./" id="brand-link" class="d-flex align-items-center w-100">
                     <img id="brand-logo" src="./img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép"
                          class="d-none d-lg-block">
                     <span class="brand-text ml-0 ml-lg-4">MeseTérKép</span>
@@ -33,7 +33,16 @@
             <div id="navbar-menu" class="collapse navbar-collapse align-self-start">
                 <ul class="navbar-nav ml-0">
                     <li class="nav-item mr-4">
-                        <a href="./index.html" class="nav-link">services</a>
+                        <!--<a href="./" class="nav-link">services</a>-->
+
+                        <a href="#header-services-menu" data-toggle="collapse" class="nav-link" role="button">services</a>
+
+                        <div class="collapse" id="header-services-menu">
+                            <a href="/workshops.html" class="d-block">Workshops</a>
+                            <a href="/birthdays.html" class="d-block">Birthdays</a>
+                            <a href="/camps.html" class="d-block">Camps</a>
+                            <a href="/index.html#about-us" class="d-block">About Us</a>
+                        </div>
                     </li>
                     <li class="nav-item mr-4">
                         <a href="./our_mission.html" class="nav-link">our mission</a>
@@ -135,58 +144,28 @@
             </div>
             <div class="col-md-8 col-xl-9 d-flex justify-content-center mb-4 mb-md-0">
                 <!-- Collapse megoldás... -->
-                <!--<div class="footer-menu-container d-flex justify-content-center justify-content-md-start w-100">-->
-                <!--<ul class="footer-menu mr-2 mr-md-5">-->
-                <!--<li class="nav-item">-->
-                <!--<a href="#footer-services-menu" data-toggle="collapse" class="list-heading" role="button">Services</a>-->
+                <div class="footer-menu-container d-flex justify-content-center justify-content-md-start flex-column flex-md-row w-100">
+                    <ul class="footer-menu mb-2 mr-md-5">
+                        <li class="nav-item">
+                            <a href="#footer-services-menu" data-toggle="collapse" class="list-heading" role="button">Services</a>
 
-                <!--<div class="collapse" id="footer-services-menu">-->
-                <!--<a href="/workshops.html" class="d-block">Workshops</a>-->
-                <!--<a href="/birthdays.html" class="d-block">Birthdays</a>-->
-                <!--<a href="/camps.html" class="d-block">Camps</a>-->
-                <!--<a href="/" class="d-block">About Us</a>-->
-                <!--</div>-->
-                <!--</li>-->
+                            <div class="collapse" id="footer-services-menu">
+                                <a href="/workshops.html" class="d-block">Workshops</a>
+                                <a href="/birthdays.html" class="d-block">Birthdays</a>
+                                <a href="/camps.html" class="d-block">Camps</a>
+                                <a href="/index.html#about-us" class="d-block">About Us</a>
+                            </div>
+                        </li>
 
-                <!--</ul>-->
-                <!--<ul class="footer-menu mr-2 mr-md-5">-->
-                <!--<li class="nav-item">-->
-                <!--<a href="/our_mission.html" class="list-heading">Our mission</a>-->
-                <!--</li>-->
-                <!--</ul>-->
-                <!--<ul class="footer-menu">-->
-                <!--<li class="nav-item">-->
-                <!--<a href="/contact.html" class="list-heading">Contact</a>-->
-                <!--</li>-->
-                <!--</ul>-->
-                <!--</div>-->
-
-                <div class="footer-menu-container d-flex justify-content-center justify-content-md-start w-100">
-                    <ul class="footer-menu mr-2 mr-md-5">
-                        <li class="nav-item">
-                            <a href="./index.html" class="list-heading">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./workshops.html">Workshops</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./birthdays.html">Birthdays</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./camps.html">Camps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./#about-us">About Us</a>
-                        </li>
                     </ul>
-                    <ul class="footer-menu mr-2 mr-md-5">
+                    <ul class="footer-menu mb-2 mr-md-5">
                         <li class="nav-item">
-                            <a href="./our_mission.html" class="list-heading">Our mission</a>
+                            <a href="/our_mission.html" class="list-heading">Our mission</a>
                         </li>
                     </ul>
                     <ul class="footer-menu">
                         <li class="nav-item">
-                            <a href="./contact.html" class="list-heading">Contact</a>
+                            <a href="/contact.html" class="list-heading">Contact</a>
                         </li>
                     </ul>
                 </div>

@@ -50,6 +50,15 @@ h2 {
     font-size: 30px;
 }
 
+a {
+    transition: all 250ms ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
 .text-huge {
     font-size: 6vw;
 }
@@ -79,6 +88,7 @@ h2 {
 
 #brand-link {
     text-decoration: none;
+    transform-origin: left;
 }
 
 #brand-link .brand-text {
@@ -95,6 +105,7 @@ h2 {
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
+    display: inline-block;
 }
 
 .navbar-toggler {
@@ -116,6 +127,14 @@ h2 {
 
 #homepage-first-separator {
     background: url("../img/separator1.png");
+    background-position-x: right;
+}
+
+@media screen and (max-width: 768px) {
+    #homepage-first-separator {
+        background-size: cover;
+        height: 145px;
+    }
 }
 
 #hero {
@@ -134,6 +153,20 @@ h2 {
 
     .hero.small {
         min-height: 240px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .navbar .nav-item .nav-link {
+        font-size: 20px;
+    }
+
+    #brand-link .brand-text {
+        font-size: 4rem;
+    }
+
+    #brand-logo {
+        height: 100px;
     }
 }
 
@@ -251,16 +284,16 @@ h2 {
 
 .floating-quote-container {
     position: absolute;
-    top: 350px;
+    top: 33.33vh;
     right: 150px;
-    max-width: 50%;
+    max-width: 25%;
 }
 
 .floating-quote {
     font-family: serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 5vw;
+    font-size: 3.5vw;
     word-wrap: break-word;
     line-height: 1.1;
 }
@@ -320,7 +353,7 @@ h2 {
 
 @media screen and (max-width: 992px) {
     .panel {
-        margin-top: 0;
+        margin-top: 4rem;
         margin-bottom: 0;
     }
 }
@@ -374,7 +407,7 @@ h2 {
 
 .meseterkep-interactive {
     position: relative;
-    width: 1073px;
+    width: 900px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -430,9 +463,13 @@ h2 {
 .meseterkep-interactive .kitti-varga,
 .meseterkep-interactive .reka-szaloki {
     position: absolute;
-    max-width: 280px;
+    max-width: 200px;
     width: 20vw;
     line-height: 1;
+}
+
+.meseterkep-interactive img {
+    width: 800px;
 }
 
 .meseterkep-popup {
@@ -441,16 +478,52 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    width: 493px;
-    height: 493px;
-    max-width: 100%;
-    text-align: left;
-    padding: 75px;
+    width: 500px;
+    height: 500px;
+    text-align: justify;
     opacity: 0;
-    background-color: #63bab2;
+    background-color: rgba(99, 186, 178, 0.94);
     color: #ffffff;
     font-size: 1rem;
     transition: all 250ms ease-in-out;
+}
+
+.meseterkep-popup .popup-shape-top:before {
+    content: '';
+    float: left;
+    clear: left;
+    height: 244px;
+    width: 244px;
+    shape-outside: radial-gradient(circle at bottom right, transparent 69%, red 69%);
+}
+
+.meseterkep-popup .popup-shape-bottom:before {
+    content: '';
+    display: block;
+    width: 244px;
+    height: 244px;
+    float: left;
+    clear: left;
+    shape-outside: radial-gradient(circle at top right, transparent 69%, red 69%);
+}
+
+.meseterkep-popup .popup-shape-top:after {
+    content: '';
+    float: right;
+    clear: right;
+    height: 244px;
+    width: 244px;
+    shape-outside: radial-gradient(circle at bottom left, transparent 69%, red 69%);
+}
+
+.meseterkep-popup .popup-shape-bottom:after {
+    content: '';
+    display: block;
+    width: 244px;
+    height: 244px;
+    float: right;
+    clear: right;
+    shape-outside: radial-gradient(circle at top left, transparent 69%, red 69%);
 }
 
 .meseterkep-popup.show {
@@ -472,6 +545,61 @@ h2 {
 
     .meseterkep-popup.show {
         display: none;
+    }
+
+    .meseterkep-popup {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .meseterkep-interactive {
+        width: 1000px;
+    }
+
+    .meseterkep-interactive .vilja-arato,
+    .meseterkep-interactive .kitti-varga,
+    .meseterkep-interactive .reka-szaloki {
+        max-width: 200px;
+    }
+
+    .meseterkep-interactive .vilja-arato {
+        left: 10vw;
+    }
+
+    .meseterkep-interactive .kitti-varga {
+        right: 10vw;
+    }
+
+    .meseterkep-interactive img {
+        width: 500px;
+    }
+
+    .meseterkep-popup {
+        width: 310px;
+        height: 310px;
+        font-size: 10px;
+    }
+
+    /* Öljetek meg inkább, az kellemesebb */
+    .meseterkep-popup .popup-shape-top:before {
+        height: 155px;
+        width: 155px;
+    }
+
+    .meseterkep-popup .popup-shape-bottom:before {
+        width: 155px;
+        height: 155px;
+    }
+
+    .meseterkep-popup .popup-shape-top:after {
+        height: 155px;
+        width: 155px;
+    }
+
+    .meseterkep-popup .popup-shape-bottom:after {
+        width: 155px;
+        height: 155px;
     }
 }
 
@@ -502,9 +630,11 @@ h2 {
         padding-right: 15px;
         right: 0;
         left: 0;
+        top: 15vh;
         max-width: 100%;
     }
 
+    .floating-quote,
     .mission-quote {
         font-size: 10vw;
     }

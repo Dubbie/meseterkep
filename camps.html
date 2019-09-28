@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MeseTérKép</title>
 
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,7 +23,7 @@
     <div class="navbar-container">
         <nav class="navbar navbar-expand-xl">
             <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="./" id="brand-link" class="d-flex align-items-center w-100">
+                <a href="./index.html" id="brand-link" class="d-flex align-items-center w-100">
                     <img id="brand-logo" src="./img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép"
                          class="d-none d-lg-block">
                     <span class="brand-text ml-0 ml-lg-4">MeseTérKép</span>
@@ -33,22 +36,24 @@
             <div id="navbar-menu" class="collapse navbar-collapse align-self-start">
                 <ul class="navbar-nav ml-0">
                     <li class="nav-item mr-4">
-                        <!--<a href="./" class="nav-link">services</a>-->
-
-                        <a href="#header-services-menu" data-toggle="collapse" class="nav-link" role="button">services</a>
-
+                        <a href="#header-services-menu" data-toggle="collapse" class="nav-link" role="button">szolgáltatások</a>
                         <div class="collapse" id="header-services-menu">
-                            <a href="/workshops.html" class="d-block">Workshops</a>
-                            <a href="/birthdays.html" class="d-block">Birthdays</a>
-                            <a href="/camps.html" class="d-block">Camps</a>
-                            <a href="/index.html#about-us" class="d-block">About Us</a>
+                            <div>
+                                <a href="./workshops.html" class="d-inline-block">foglalkozások</a>
+                            </div>
+                            <div>
+                                <a href="./birthdays.html" class="d-inline-block">szülinapok</a>
+                            </div>
+                            <div>
+                                <a href="./camps.html" class="d-inline-block">táborok</a>
+                            </div>
                         </div>
                     </li>
                     <li class="nav-item mr-4">
-                        <a href="./our_mission.html" class="nav-link">our mission</a>
+                        <a href="./our_mission.html" class="nav-link">rólunk</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a href="./contact.html" class="nav-link">contact</a>
+                        <a href="./contact.html" class="nav-link">kapcsolat</a>
                     </li>
                     <li class="nav-item d-flex ml-1 ml-lg-4">
                         <a href="#!" class="nav-link mr-4 mr-xl-0"><img src="./img/instagram.png" alt=""></a>
@@ -64,22 +69,23 @@
         <div id="birthday-programmes" class="d-flex justify-content-between">
             <div class="programmes row">
                 <div class="col-12 col-md-6 col-xl-3 program">
-                    <h3 class="font-weight-bold">Camps:</h3>
-                    <p class="font-weight-bold mb-0">Galactic Camp<br>Integration Camp</p>
+                    <h3 class="font-weight-bold mb-1 mb-md-4">Napközis táboraink:</h3>
+                    <p class="mb-2">Évente változó témaspecifikus alkotótábor</p>
+                    <p>Integrált alkotótábor</p>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 program">
-                    <h3 class="font-weight-bold">Price:</h3>
-                    <p class="mb-0 font-weight-bold">The program from 8:00-16:00, the lunch & afternoon snack are
-                        included.
-                        <br>Galactic Camp: 32000 HUF <br>Integration Camp: 18000 HUF</p>
+                    <h3 class="font-weight-bold mb-1 mb-md-4">Árak:</h3>
+                    <p class="mb-2">Tartalmazza a programokat minden nap 8.00-tól 16.00-ig, az ebéd és az uzsonna árát.</p>
+                    <p class="mb-2">Témaspecifikus alkotótábor: 32000 HUF</p>
+                    <p>Integrált alkotótábor: 18000 HUF</p>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 program">
-                    <h3 class="font-weight-bold">Dates:</h3>
-                    <p class="font-weight-bold">Galactic Camp <br>August 12-16</p>
-                    <p class="mb-0 font-weight-bold">Integration Camp <br>August 26-30</p>
+                    <h3 class="font-weight-bold mb-1 mb-md-4">Dátumok:</h3>
+                    <p class="mb-2">Témaspecifikus alkotótábor:<br><span class="font-weight-bold">Bejelentés tavasszal!</span></p>
+                    <p>Integrált alkotótábor:<br><span class="font-weight-bold">Bejelentés tavasszal!</span></p>
                     <!--<a href="#!" class="button button-sm mt-5">Apply Now!</a>-->
                 </div>
-                <div class="d-none d-md-block col-md-6 col-xl-3 text-center">
+                <div class="d-none d-md-block col-md-6 col-xl-3 text-center p-5 p-xl-0">
                     <img src="./img/camps_icon.png" alt="" class="big-icon mw-100">
                 </div>
             </div>
@@ -89,11 +95,10 @@
             <div class="row align-items-center mb-0 mb-xl-5">
                 <div class="col-12 col-xl-6">
                     <div class="p-5">
-                        <p class="font-weight-bold mb-2">Galactic Camp</p>
-                        <p class="font-weight-bold mb-0">During the galactic journey, the young astronauts will be
-                            involved not only in spaceship building, but in the creation of new colorful worlds and many
-                            other space adventures and challenges!
-                            Join the crew and let's explore our galaxy together!</p>
+                        <p class="font-weight-bold mb-2">Évreről évre megújuló témaspecifikus tábor</p>
+                        <p class="mb-0">Minden évben megrendezésre kerül nyáritáborunk,
+                            ahol az aktuális téma keretén belül keveredünk óriási kalandokba! Tavalyi Bolygóközi Űrtáborunk
+                            képeit megtekinthetitek Facebook oldalunkon. Következő táborunk témájának bejelentését tavaszra várjátok!</p>
                     </div>
                 </div>
                 <div class="col-12 col-xl-6 no-rel">
@@ -106,11 +111,11 @@
                 </div>
                 <div class="col-12 col-xl-6">
                     <div class="p-5">
-                        <p class="font-weight-bold mb-2">Integration Camp</p>
-                        <p class="font-weight-bold mb-0">Have you ever wondered how you would look like on Van Gogh's
-                            portraits?
-                            Along with the “Hold My Hand” foundation we create an experience where we challenge
-                            ourselves in the role of famous painters.</p>
+                        <p class="font-weight-bold mb-2">Integrált alkotótábor</p>
+                        <p class="mb-0">A hét során különböző festők portré alkotási technikáival
+                            kísérletezünk különböző eszközök segítségével.
+                            Pingálunk és vágunk, miniatűr és életnagyságú nyomot hagyunk magunkról.
+                            A Fogd a Kezem Alapítvány és a MeseTérKép közös táborában nagy festők bőrébe bújva próbáljuk ki magunkat.</p>
                     </div>
                 </div>
             </div>
@@ -121,33 +126,34 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-xl-1 text-center">
-                <img src="./img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép"
-                     class="mr-0 mr-md-5">
+                <a href="./index.html">
+                    <img src="./img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép"
+                         class="mr-0 mr-md-5">
+                </a>
             </div>
             <div class="col-md-8 col-xl-9 d-flex justify-content-center mb-4 mb-md-0">
                 <!-- Collapse megoldás... -->
                 <div class="footer-menu-container d-flex justify-content-center justify-content-md-start flex-column flex-md-row w-100">
                     <ul class="footer-menu mb-2 mr-md-5">
                         <li class="nav-item">
-                            <a href="#footer-services-menu" data-toggle="collapse" class="list-heading" role="button">Services</a>
+                            <a href="#footer-services-menu" data-toggle="collapse" class="list-heading" role="button">Szolgáltatások</a>
 
                             <div class="collapse" id="footer-services-menu">
-                                <a href="/workshops.html" class="d-block">Workshops</a>
-                                <a href="/birthdays.html" class="d-block">Birthdays</a>
-                                <a href="/camps.html" class="d-block">Camps</a>
-                                <a href="/index.html#about-us" class="d-block">About Us</a>
+                                <a href="./workshops.html" class="d-block">Foglalkozások</a>
+                                <a href="./birthdays.html" class="d-block">Szülinapok</a>
+                                <a href="./camps.html" class="d-block">Táborok</a>
                             </div>
                         </li>
 
                     </ul>
                     <ul class="footer-menu mb-2 mr-md-5">
                         <li class="nav-item">
-                            <a href="/our_mission.html" class="list-heading">Our mission</a>
+                            <a href="./our_mission.html" class="list-heading">Rólunk</a>
                         </li>
                     </ul>
                     <ul class="footer-menu">
                         <li class="nav-item">
-                            <a href="/contact.html" class="list-heading">Contact</a>
+                            <a href="./contact.html" class="list-heading">Kapcsolat</a>
                         </li>
                     </ul>
                 </div>

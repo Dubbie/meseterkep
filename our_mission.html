@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MeseTérKép</title>
 
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,7 +22,7 @@
     <div class="navbar-container">
         <nav class="navbar navbar-expand-xl">
             <div class="d-flex justify-content-between align-items-center w-100">
-                <a href="./" id="brand-link" class="d-flex align-items-center w-100">
+                <a href="./index.html" id="brand-link" class="d-flex align-items-center w-100">
                     <img id="brand-logo" src="./img/meseterkep_logo.png" alt="MeseTérKép logóját ábrázoló kép"
                          class="d-none d-lg-block">
                     <span class="brand-text ml-0 ml-lg-4">MeseTérKép</span>
@@ -32,22 +35,24 @@
             <div id="navbar-menu" class="collapse navbar-collapse align-self-start">
                 <ul class="navbar-nav ml-0">
                     <li class="nav-item mr-4">
-                        <!--<a href="./" class="nav-link">services</a>-->
-
-                        <a href="#header-services-menu" data-toggle="collapse" class="nav-link" role="button">services</a>
-
+                        <a href="#header-services-menu" data-toggle="collapse" class="nav-link" role="button">szolgáltatások</a>
                         <div class="collapse" id="header-services-menu">
-                            <a href="/workshops.html" class="d-block">Workshops</a>
-                            <a href="/birthdays.html" class="d-block">Birthdays</a>
-                            <a href="/camps.html" class="d-block">Camps</a>
-                            <a href="/index.html#about-us" class="d-block">About Us</a>
+                            <div>
+                                <a href="./workshops.html" class="d-inline-block">foglalkozások</a>
+                            </div>
+                            <div>
+                                <a href="./birthdays.html" class="d-inline-block">szülinapok</a>
+                            </div>
+                            <div>
+                                <a href="./camps.html" class="d-inline-block">táborok</a>
+                            </div>
                         </div>
                     </li>
                     <li class="nav-item mr-4">
-                        <a href="./our_mission.html" class="nav-link">our mission</a>
+                        <a href="./our_mission.html" class="nav-link">rólunk</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a href="./contact.html" class="nav-link">contact</a>
+                        <a href="./contact.html" class="nav-link">kapcsolat</a>
                     </li>
                     <li class="nav-item d-flex ml-1 ml-lg-4">
                         <a href="#!" class="nav-link mr-4 mr-xl-0"><img src="./img/instagram.png" alt=""></a>
@@ -63,7 +68,7 @@
         <div class="row mb-5">
             <div class="col-lg-6">
                 <p class="mission-quote mb-5">
-                    <i>"Our mission is to revolutionize children's activities, making them more educational, acquainting them with art and literature"</i>
+                    <i>"Nálunk nem a kézügyesség a fontos, hiszen nem a végeredmény,  sokkal inkább az alkotófolyamat számít!"</i>
                 </p>
             </div>
             <div class="col-lg-6 d-none d-lg-flex justify-content-end">
@@ -83,12 +88,16 @@
                     <p class="img-label mt-2">Vilja Arató</p>
                 </div>
                 <div id="popup-vilja-arato" class="meseterkep-popup">
-                    <h5 class="font-weight-bold mb-2">Cultural mediator, Drama teacher</h5>
-                    <ul class="font-weight-bold">
-                        <li>Andragogy studies (BA)</li>
-                        <li>MA in the Dual Post-Degree program at PTE FEEK and Hochschule Zittau/ Görlitz in the fields of cultural mediation and management</li>
-                        <li>Drama Education Programme of the Hungarian Drama Educational Society</li>
-                    </ul>
+                    <div class="popup-shape-top"></div>
+                    <div class="popup-shape-bottom"></div>
+                    <p class="text-center">Pécsen kezdem meg Andragógia tanulmányaimat, mert egy rövid látogatás
+                        során teljesen beleszerettem a városba. A mesterképzést a PTE FEEK és a Hochschule Zittau/Görlitz közös
+                        Dual Post–Degree programja keretében végeztem el kulturális mediáció illetve Kultur und Management szakokon,
+                        majd az egyetem befejezését követően elvégeztem a Magyar Drámapedagógiai Társaság Drámapedagógia képzését.
+                        Németországi múzempedagógiai gyakorlatom során találkoztam először a gyermekmúzeum fogalmával,
+                        ami nagyon felkeltette az érdeklődésem. Több kontinens gyerekmúzeumaiba
+                        is ellátogattam, hogy minél jobban megismerhessem ezt az intézménytípust,
+                        hogy a későbbiekben én is hozzájárulhassak hasonló szellemiségben megvalósuló projektek létrejöttéhez.</p>
                 </div>
 
                 <!-- Kitti Varga -->
@@ -100,12 +109,15 @@
                     <p class="img-label mt-2">Kitti Varga</p>
                 </div>
                 <div id="popup-kitti-varga" class="meseterkep-popup">
-                    <h5 class="font-weight-bold mb-2">Cultural mediator, Drama teacher</h5>
-                    <ul class="font-weight-bold">
-                        <li>Andragogy studies (BA)</li>
-                        <li>MA in the Dual Post-Degree program at PTE FEEK and Hochschule Zittau/ Görlitz in the fields of cultural mediation and management</li>
-                        <li>Drama Education Programme of the Hungarian Drama Educational Society</li>
-                    </ul>
+                    <div class="popup-shape-top"></div>
+                    <div class="popup-shape-bottom"></div>
+                    <p class="mb-0">2010-ben kezdtem tanulmányaimat a PTE magyar szakán,
+                        amit az ELTE irodalom-és kultúratudomány mesterképzése követett. Emellett végeztem el a KRE gyermek- és ifjúsági
+                        irodalmi szakképzését és a MOME művészettel nevelés tanfolyamát. Két évig gyakornokoskodtam a Mesemúzeum és Meseműhelyben,
+                        illetve a Ludwig Múzeum múzeumpedagógiai osztályán. Jelenleg első éves PhD hallgató vagyok a
+                        PTE „Oktatás és Társadalom” Neveléstudományi Doktori iskola Nevelésszociológia programjában,
+                        ahol témám az intellektuális és testi akadályozottsággal élők reprezentációja a gyerekirodalomban,
+                        integrációjuk a művészeti nevelés által</p>
                 </div>
 
                 <!-- Réka Szalóki -->
@@ -117,12 +129,14 @@
                     <p class="img-label mt-2">Réka Szalóki</p>
                 </div>
                 <div id="popup-reka-szaloki" class="meseterkep-popup">
-                    <h5 class="font-weight-bold mb-2">Cultural mediator, Drama teacher</h5>
-                    <ul class="font-weight-bold">
-                        <li>Andragogy studies (BA)</li>
-                        <li>MA in the Dual Post-Degree program at PTE FEEK and Hochschule Zittau/ Görlitz in the fields of cultural mediation and management</li>
-                        <li>Drama Education Programme of the Hungarian Drama Educational Society</li>
-                    </ul>
+                    <div class="popup-shape-top"></div>
+                    <div class="popup-shape-bottom"></div>
+                    Egyetemi éveim alatt szabad bölcsészetet tanultam,
+                    később kiegészítettem ezt művészetfilozófiai (Esztétika) mesterképzéssel.
+                    Érdeklődésem és hivatásom gyakorlati megalapozásához a PTE ÁOK és PTE Művészeti Kar közös képzését,
+                    a Művészetterápia szakirányú továbbképzést választottam. A Coachingcentrum Life- és business coach
+                    képzését elvégezve art coachként vezetek művészetterápiás csoportokat. 2014 óta dolgozom különböző
+                    civil szervezetekkel kulturális és művészeti programok megvalósítója és koordinátoraként.
                 </div>
             </div>
 
@@ -131,32 +145,42 @@
                 <!-- Vilja Arató -->
                 <h2 class="font-weight-bold mb-2">Vilja Arató</h2>
                 <p class="font-weight-bold text-small mb-2">Cultural mediator, Drama teacher</p>
-                <ul class="text-left text-small">
-                    <li>Andragogy studies (BA)</li>
-                    <li>MA in the Dual Post-Degree program at PTE FEEK and Hochschule Zittau/ Görlitz in the fields of cultural mediation and management</li>
-                    <li>Drama Education Programme of the Hungarian Drama Educational Society</li>
-                </ul>
+                <p class="text-left text-small mb-5">
+                    Pécsen kezdem meg Andragógia tanulmányaimat, mert egy rövid látogatás
+                    során teljesen beleszerettem a városba. A mesterképzést a PTE FEEK és a Hochschule Zittau/Görlitz közös
+                    Dual Post–Degree programja keretében végeztem el kulturális mediáció illetve Kultur und Management szakokon,
+                    majd az egyetem befejezését követően elvégeztem a Magyar Drámapedagógiai Társaság Drámapedagógia képzését.
+                    Németországi múzempedagógiai gyakorlatom során találkoztam először a gyermekmúzeum fogalmával,
+                    ami nagyon felkeltette az érdeklődésem. Több kontinens gyerekmúzeumaiba
+                    is ellátogattam, hogy minél jobban megismerhessem ezt az intézménytípust,
+                    hogy a későbbiekben én is hozzájárulhassak hasonló szellemiségben megvalósuló projektek létrejöttéhez.
+                </p>
 
                 <!-- Kitti Varga -->
                 <h2 class="font-weight-bold mb-2">Kitti Varga</h2>
                 <p class="font-weight-bold text-small mb-2">Titles</p>
-                <ul class="text-left text-small">
-                    <li>List items</li>
-                    <li>Go</li>
-                    <li>Here</li>
-                </ul>
+                <p class="text-left text-small mb-5">
+                    2010-ben kezdtem tanulmányaimat a PTE magyar szakán,
+                    amit az ELTE irodalom-és kultúratudomány mesterképzése követett. Emellett végeztem el a KRE gyermek- és ifjúsági
+                    irodalmi szakképzését és a MOME művészettel nevelés tanfolyamát. Két évig gyakornokoskodtam a Mesemúzeum és Meseműhelyben,
+                    illetve a Ludwig Múzeum múzeumpedagógiai osztályán. Jelenleg első éves PhD hallgató vagyok a
+                    PTE „Oktatás és Társadalom” Neveléstudományi Doktori iskola Nevelésszociológia programjában,
+                    ahol témám az intellektuális és testi akadályozottsággal élők reprezentációja a gyerekirodalomban,
+                    integrációjuk a művészeti nevelés által
+                </p>
 
                 <!-- Réka Szalóki -->
                 <h2 class="font-weight-bold mb-2">Réka Szalóki</h2>
                 <p class="font-weight-bold text-small mb-2">Titles</p>
-                <ul class="text-left text-small">
-                    <li>List items</li>
-                    <li>Go</li>
-                    <li>Here</li>
-                </ul>
+                <p class="text-left text-small">Egyetemi éveim alatt szabad bölcsészetet tanultam,
+                    később kiegészítettem ezt művészetfilozófiai (Esztétika) mesterképzéssel.
+                    Érdeklődésem és hivatásom gyakorlati megalapozásához a PTE ÁOK és PTE Művészeti Kar közös képzését,
+                    a Művészetterápia szakirányú továbbképzést választottam. A Coachingcentrum Life- és business coach
+                    képzését elvégezve art coachként vezetek művészetterápiás csoportokat. 2014 óta dolgozom különböző
+                    civil szervezetekkel kulturális és művészeti programok megvalósítója és koordinátoraként.</p>
             </div>
 
-            <h1 class="font-weight-bold text-huge my-5">Our Story</h1>
+            <h1 class="font-weight-bold text-huge my-5">Mérföldkövek</h1>
             <img src="./img/timeline.png" alt="" class="mw-100">
         </div>
     </div>
@@ -165,33 +189,34 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-xl-1 text-center">
-                <img src="./img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép"
-                     class="mr-0 mr-md-5">
+                <a href="./index.html">
+                    <img src="./img/meseterkep_logo.png" id="footer-logo" alt="MeseTérKép logóját ábrázoló kép"
+                         class="mr-0 mr-md-5">
+                </a>
             </div>
             <div class="col-md-8 col-xl-9 d-flex justify-content-center mb-4 mb-md-0">
                 <!-- Collapse megoldás... -->
                 <div class="footer-menu-container d-flex justify-content-center justify-content-md-start flex-column flex-md-row w-100">
                     <ul class="footer-menu mb-2 mr-md-5">
                         <li class="nav-item">
-                            <a href="#footer-services-menu" data-toggle="collapse" class="list-heading" role="button">Services</a>
+                            <a href="#footer-services-menu" data-toggle="collapse" class="list-heading" role="button">Szolgáltatások</a>
 
                             <div class="collapse" id="footer-services-menu">
-                                <a href="/workshops.html" class="d-block">Workshops</a>
-                                <a href="/birthdays.html" class="d-block">Birthdays</a>
-                                <a href="/camps.html" class="d-block">Camps</a>
-                                <a href="/index.html#about-us" class="d-block">About Us</a>
+                                <a href="./workshops.html" class="d-block">Foglalkozások</a>
+                                <a href="./birthdays.html" class="d-block">Szülinapok</a>
+                                <a href="./camps.html" class="d-block">Táborok</a>
                             </div>
                         </li>
 
                     </ul>
                     <ul class="footer-menu mb-2 mr-md-5">
                         <li class="nav-item">
-                            <a href="/our_mission.html" class="list-heading">Our mission</a>
+                            <a href="./our_mission.html" class="list-heading">Rólunk</a>
                         </li>
                     </ul>
                     <ul class="footer-menu">
                         <li class="nav-item">
-                            <a href="/contact.html" class="list-heading">Contact</a>
+                            <a href="./contact.html" class="list-heading">Kapcsolat</a>
                         </li>
                     </ul>
                 </div>

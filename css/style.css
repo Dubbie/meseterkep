@@ -171,23 +171,23 @@ a:hover {
 }
 
 #workshops-hero {
-    background: #ffaf17 url("../img/workshops_hero.png") no-repeat center center;
+    background: url("../img/workshops_hero.png") no-repeat center center;
 }
 
 #birthdays-hero {
-    background: #ffaf17 url("../img/birthdays_hero.png") no-repeat center center;
+    background: url("../img/birthdays_hero.png") no-repeat center center;
 }
 
 #camps-hero {
-    background: #ffaf17 url("../img/camps_hero.png") no-repeat center center;
+    background: url("../img/camps_hero.png") no-repeat center center;
 }
 
 #our-mission-hero {
-    background: #ffaf17 url("../img/our_mission_hero.png") no-repeat center center;
+    background: url("../img/our_mission_hero.png") no-repeat center center;
 }
 
 #contact-hero {
-    background: #ffaf17 url("../img/contact_hero.png") no-repeat center center;
+    background: url("../img/contact_hero.png") no-repeat center center;
 }
 
 #workshops-hero,

@@ -253,14 +253,14 @@ h2 {
     position: absolute;
     top: 350px;
     right: 150px;
-    max-width: 569px;
+    max-width: 50%;
 }
 
 .floating-quote {
     font-family: serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 80px;
+    font-size: 5vw;
     word-wrap: break-word;
     line-height: 1.1;
 }
@@ -505,7 +505,6 @@ h2 {
         max-width: 100%;
     }
 
-    .floating-quote,
     .mission-quote {
         font-size: 10vw;
     }

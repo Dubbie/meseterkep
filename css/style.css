@@ -86,6 +86,10 @@ a:hover {
     height: 177px;
 }
 
+#brand-logo {
+    height: 100px;
+}
+
 #brand-link {
     text-decoration: none;
     transform-origin: left;
@@ -93,7 +97,7 @@ a:hover {
 
 #brand-link .brand-text {
     color: #ffffff;
-    font-size: 5.45rem;
+    font-size: 4rem;
 }
 
 .navbar .nav-item {
@@ -159,14 +163,6 @@ a:hover {
 @media screen and (max-width: 1366px) {
     .navbar .nav-item .nav-link {
         font-size: 20px;
-    }
-
-    #brand-link .brand-text {
-        font-size: 4rem;
-    }
-
-    #brand-logo {
-        height: 100px;
     }
 }
 
@@ -273,13 +269,32 @@ a:hover {
     object-fit: contain;
 }
 
+#our-mission-content .big-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw;
+}
+
+@media screen and (max-width: 1366px) {
+    #our-mission-content .big-icon {
+        max-width: 390px;
+        height: auto;
+    }
+}
+
 .mission-quote {
     font-family: serif;
     font-style: italic;
     font-size: 70px;
     word-wrap: break-word;
     line-height: 1.1;
-    max-width: 780px;
+}
+
+@media screen and (max-width: 1366px) {
+    .mission-quote {
+        font-size: 50px;
+    }
 }
 
 .floating-quote-container {
@@ -530,28 +545,6 @@ a:hover {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .meseterkep-interactive-image .img-overlay {
-        opacity: 0;
-    }
-
-    .meseterkep-interactive .img-label {
-        font-size: 1rem;
-    }
-
-    .meseterkep-interactive {
-        margin-bottom: 140px;
-    }
-
-    .meseterkep-popup.show {
-        display: none;
-    }
-
-    .meseterkep-popup {
-        font-size: 9px;
-    }
-}
-
 @media (max-width: 1366px) {
     .meseterkep-interactive {
         width: 1000px;
@@ -600,6 +593,40 @@ a:hover {
     .meseterkep-popup .popup-shape-bottom:after {
         width: 155px;
         height: 155px;
+    }
+}
+
+@media (max-width: 768px) {
+    .meseterkep-interactive .vilja-arato {
+        left: 5vw;
+    }
+
+    .meseterkep-interactive .kitti-varga {
+        right: 5vw;
+    }
+
+    .meseterkep-interactive-image .img-overlay {
+        opacity: 0;
+    }
+
+    .meseterkep-interactive .img-label {
+        font-size: 1rem;
+    }
+
+    .meseterkep-interactive {
+        margin-bottom: 140px;
+    }
+
+    .meseterkep-interactive img {
+        width: 75vw;
+    }
+
+    .meseterkep-popup.show {
+        display: none;
+    }
+
+    .meseterkep-popup {
+        font-size: 9px;
     }
 }
 

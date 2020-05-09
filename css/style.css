@@ -724,6 +724,10 @@ a:hover {
 .margin-top {
 	margin-top: 50px;
 }
+.margin-top-floattext {
+	margin-top: 180px;
+	opacity: 0.75;
+}
 .flex-column {
 	flex-direction: column;
 	align-items: flex-start;

@@ -209,7 +209,7 @@ a:hover {
 }
 
 #workshops-content::before {
-	content: 'Workshops';
+	/*content: 'Workshops';*/
 	color: #fafafa;
 	position: absolute;
 	top: 0;
@@ -220,7 +220,7 @@ a:hover {
 }
 
 #birthdays-content::before {
-	content: 'Birthdays';
+	/*content: 'Birthdays';*/
 	color: #fafafa;
 	position: absolute;
 	top: 0;
@@ -231,7 +231,7 @@ a:hover {
 }
 
 #camps-content::before {
-	content: 'Camps';
+	/*content: 'Camps';*/
 	color: #fafafa;
 	position: absolute;
 	top: 0;
@@ -242,7 +242,7 @@ a:hover {
 }
 
 #our-mission-content::before {
-	content: 'mission';
+	/*content: 'mission';*/
 	color: #fafafa;
 	position: absolute;
 	top: 0;
@@ -253,7 +253,7 @@ a:hover {
 }
 
 #contact-content::before {
-	content: 'Contact';
+	/*content: 'Contact';*/
 	color: #fafafa;
 	position: absolute;
 	top: 0;
@@ -284,10 +284,14 @@ a:hover {
 	}
 }
 
-.mission-quote {
-	font-family: serif;
+.serif {
 	font-style: italic;
-	font-size: 70px;
+	font-size: 3vw;
+}
+
+.mission-quote {
+	font-style: italic;
+	font-size: 50px;
 	word-wrap: break-word;
 	line-height: 1.1;
 }
@@ -486,6 +490,7 @@ a:hover {
 
 .meseterkep-interactive img {
 	width: 800px;
+
 }
 
 .meseterkep-popup {
@@ -687,7 +692,6 @@ a:hover {
 	padding-bottom: 67px;
 	color: #000000;
 	background: url('../img/footer.png') #ffaf17;
-	/*background-color: #ffaf17;*/
 }
 
 #footer ul {
@@ -696,8 +700,7 @@ a:hover {
 }
 
 #footer #footer-logo {
-	filter: invert(100%);
-	width: 104px;
+	width: 141px;
 	height: 141px;
 }
 
@@ -721,24 +724,30 @@ a:hover {
 	font-size: 25px;
 	margin-bottom: 40px;
 }
+
 .margin-top {
 	margin-top: 50px;
 }
+
 #press-appearances {
 	margin-left: 25px;
 	list-style-type: square;
 }
+
 #press-appearances > li {
 	margin-top: 5px;
 }
+
 .margin-top-floattext {
 	margin-top: 180px;
 	opacity: 0.75;
 }
+
 .flex-column {
 	flex-direction: column;
 	align-items: flex-start;
 }
+
 .footer-links a {
 	text-decoration: none;
 }

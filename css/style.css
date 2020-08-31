@@ -23,7 +23,7 @@ section.section-padded {
 }
 
 section#links {
-	padding-top: 170px;
+	padding-top: 75px;
 	padding-bottom: 170px;
 }
 
@@ -143,8 +143,8 @@ a:hover {
 }
 
 #hero {
-	background: #ffaf17 url('../img/hero.png') no-repeat center center;
-	height: 100vh;
+	background: #ffaf17 url('../img/hero.png') no-repeat center top;
+	height: 55vh;
 }
 
 .hero.small {

@@ -320,6 +320,7 @@ a:hover {
 
 .big-icon-to-right {
 	right: -75px !important;
+	top: -80px !important;
 }
 
 /* Paneles dolgok */
@@ -388,7 +389,7 @@ a:hover {
 
 .rounded-img {
 	display: block;
-	max-width: 100%;
+	max-width: 80%;
 }
 
 .separator {

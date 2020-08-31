@@ -502,9 +502,9 @@ a:hover {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	width: 500px;
-	height: 500px;
-	text-align: justify;
+	width: 525px;
+	height: 525px;
+	/* text-align: justify; */
 	opacity: 0;
 	background-color: rgba(99, 186, 178, 0.94);
 	color: #ffffff;
@@ -768,7 +768,4 @@ a:hover {
 	.footer-menu .nav-item .list-heading {
 		margin-bottom: 0.25rem;
 	}
-}
-
-.text-wrap {
 }

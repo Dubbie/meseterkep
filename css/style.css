@@ -61,7 +61,7 @@ a:hover {
 }
 
 .text-huge {
-	font-size: 6vw;
+	font-size: 4vw;
 }
 
 .text-small {
@@ -298,7 +298,7 @@ a:hover {
 
 @media screen and (max-width: 1366px) {
 	.mission-quote {
-		font-size: 50px;
+		font-size: 40px;
 	}
 }
 
@@ -316,6 +316,10 @@ a:hover {
 	font-size: 3.5vw;
 	word-wrap: break-word;
 	line-height: 1.1;
+}
+
+.big-icon-to-right {
+	right: -75px !important;
 }
 
 /* Paneles dolgok */
@@ -490,7 +494,6 @@ a:hover {
 
 .meseterkep-interactive img {
 	width: 800px;
-
 }
 
 .meseterkep-popup {
@@ -677,7 +680,7 @@ a:hover {
 
 	.floating-quote,
 	.mission-quote {
-		font-size: 10vw;
+		font-size: 5vw;
 	}
 
 	section#links,
@@ -768,5 +771,4 @@ a:hover {
 }
 
 .text-wrap {
-
 }

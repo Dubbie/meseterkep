@@ -505,14 +505,13 @@ a:hover {
 	border-radius: 50%;
 	width: 525px;
 	height: 525px;
-	/* text-align: justify; */
+	text-align: justify !important;
 	opacity: 0;
 	background-color: rgba(99, 186, 178, 0.94);
 	color: #ffffff;
 	font-size: 1rem;
 	transition: all 250ms ease-in-out;
 }
-
 .meseterkep-popup .popup-shape-top:before {
 	content: '';
 	float: left;
